@@ -28,6 +28,10 @@ const orthogonal = (floats, width, height) => {
 const start = (vertexSrc, fragmentSrc) => {
     const canvas = document.querySelector("canvas");
     const gl = canvas.getContext("webgl2", {preserveDrawingBuffer: true});
+    if (null === gl || undefined === gl) {
+        alert("Your browser does not support WebGL2 :(");
+        return;
+    }
     gl.clearColor(0.0, 0.0, 0.0, 0.0);
     const createShader = (source, type) => {
         const shader = gl.createShader(type);
