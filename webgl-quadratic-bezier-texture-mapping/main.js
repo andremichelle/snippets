@@ -79,7 +79,7 @@ const start = (vertexSrc, fragmentSrc) => {
     const h = window.innerHeight;
     const p0 = new Point(w * 0.1, h * 0.1);
     const p1 = new Point(w * 0.9, h * 0.1);
-    const p2 = new Point(w * 0.9, h * 0.9);
+    const p2 = new Point(w * 0.3, h * 0.9);
     const spanA = document.querySelector("span#A");
     const spanB = document.querySelector("span#B");
     const spanC = document.querySelector("span#C");

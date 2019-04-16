@@ -46,7 +46,7 @@ float getDistance(vec2 p0, vec2 p1, vec2 p2, float t) {
 }
 
 void main() {
-    float halfThickness = 25.0;// must be the same in both shaders
+    float halfThickness = 30.0;// must be the same in both shaders
     t = tt.x;
     s = tt.y;
     d = getDistance(p0, p1, p2, tt.x);
