@@ -24,6 +24,7 @@ vec2 getNormal(vec2 p0, vec2 p1, vec2 p2, float t) {
     return vec2(-d.y, d.x);
 }
 
+// https://gist.github.com/tunght13488/6744e77c242cc7a94859
 float getLength(vec2 p0, vec2 p1, vec2 p2) {
     vec2 a = p0 - 2.0 * p1 + p2;
     vec2 b = 2.0 * p1 - 2.0 * p0;
