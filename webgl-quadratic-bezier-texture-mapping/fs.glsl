@@ -13,7 +13,7 @@ void main() {
     float textureWidth = 2048.0;
     float textureHeight = 128.0;
     float z = -2.0 * asin(s) / pi;
-    vec2 uv = vec2(d * textureHeight / (textureWidth * halfThickness * 4.0) + time * 3.0, acos(-s) / pi - time * 7.0);
+    vec2 uv = vec2(d * textureHeight / (textureWidth * halfThickness * 4.0) + time * 2.0, acos(-s) / pi - time * 5.0);
     vec3 tex = texture2D(u_texture, uv).rgb;
     float nz = sqrt(1.0 - s * s);
     gl_FragColor = vec4(nz * tex, 1.0);

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D Quadratic Bezier AABB</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            fill: white;
+            stroke: aqua;
+            background-color: #1A1A1A;
+        }
+
+        footer {
+            right: 8px;
+            bottom: 8px;
+            position: absolute;
+        }
+
+        footer a {
+            color: white;
+            font-family: Verdana, sans-serif;
+        }
+    </style>
+    <script src="main.js" type="module"></script>
+</head>
+<body>
+<svg>
+    <circle r="7"></circle>
+    <circle r="7"></circle>
+    <circle r="7"></circle>
+    <rect x="0" y="0" width="32" height="32" fill="none" stroke="white" stroke-dasharray="4 1 2 3"></rect>
+    <path fill="none"></path>
+</svg>
+<footer><a href="https://github.com/andremichelle/snippets">source code</a></footer>
+</body>
+</html>
